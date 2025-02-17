@@ -7,22 +7,3 @@
     background-color: rgba(154, 147, 147, 0.8) !important; /* Cor personalizada ao passar o mouse */
     border-color: rgba(92, 91, 91, 0.8) !important; /* Cor personalizada da borda ao passar o mouse */
   }
-@media (max-width:800px){
-  .recaptcha-container iframe {
-    max-width: 260px !important;
-    background-color: transparent !important;
-  }
-  .recaptcha-wrapper {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background-color: transparent !important;
-    width: 100% !important;
-  }
-}
-@media (min-width:800px) and (max-width:3000px){
-  .recaptcha-container iframe {
-    max-width: 260px !important;
-    background-color: transparent !important;
-  }
-}
