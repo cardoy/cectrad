@@ -89,7 +89,7 @@
 
 @media (min-width:600px) and (max-width:750px) {
    .cont h3 {
-    font-size: 16px !important;
+    font-size: 16px;
    } 
 }
 
@@ -112,7 +112,7 @@
     height: 64vh !important; /* Define a altura menor */
   }
   .cont h3 {
-    font-size: 18px !important;
+    font-size: 22px !important;
   }
 }
 @media (min-height: 800px)  {
