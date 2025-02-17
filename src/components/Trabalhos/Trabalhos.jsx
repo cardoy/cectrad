@@ -18,7 +18,7 @@ export default function Trabalhos  () {
     };
   
   return (
-    <div className='corpo'>
+    <div className='corpoTrab text-center' >
       <h6>Seguem exemplos de trabalhos já realizados.</h6>
       <h6>Clique na capa para ver a tradução na íntegra.</h6>
         <Container className="livros-container text-center mt-4">

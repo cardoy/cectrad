@@ -4,13 +4,13 @@
   align-items: center;
   justify-content: center; /* Centraliza verticalmente */
   height: auto; /* Mantém a altura mínima igual à altura da tela */
-  margin-top: 70px;
+  margin-top: 20px;
   margin-bottom: 60px;
   width: 100%;
   overflow-y: auto; /* Adiciona rolagem se necessário */
   padding: 20px;
 }
-.corpo{
+.corpoArea{
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
@@ -72,7 +72,7 @@
 @media (min-height: 701px) {
 
   .col1, .col2 {
-      margin-top: 40px;
+      margin-top: 20px;
       width: 95%; /* Faz com que ocupem a tela toda */
       text-align: center; /* Centraliza o texto para melhor leitura */
       

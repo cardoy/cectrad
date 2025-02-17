@@ -36,7 +36,7 @@ export default function Contato() {
   };
 
   return (
-    <div className="corpo">
+    <div className="corpoCon">
       <Container fluid className="px-3">
         <Row className="justify-content-center my-4">
         <Col xs={12} sm={8} md={8} lg={8} className="text-center">

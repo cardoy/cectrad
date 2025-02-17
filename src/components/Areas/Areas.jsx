@@ -4,7 +4,7 @@ import {Col } from 'react-bootstrap';
 export default function Home  () {
   return (
     <div className='bodyArea'>
-          <div className='corpo'>
+          <div className='corpoArea'>
             <Col className='col1'>
                 <h3 className='h3'>Traduções Técnico-científicas</h3>
                 <h5 className='h5'>Temos experiência nas seguintes áreas: </h5>
