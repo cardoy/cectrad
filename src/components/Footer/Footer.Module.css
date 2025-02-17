@@ -1,0 +1,43 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(200, 200, 200, 0.8); /* Cinza claro com transparência */
+  backdrop-filter: blur(5px); /* Ajusta o efeito de desfoque */
+  color: rgb(92, 89, 89) !important;
+  border-top: 2px solid rgba(16, 16, 18, 0.8); /* Cor um pouco mais visível */
+ 
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Texto à esquerda, ícones à direita */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px ;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px; /* Espaço entre os ícones */
+}
+
+.whatsapp-icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1); /* Efeito de crescimento ao passar o mouse */
+}
+footer p{
+  color: rgb(92, 89, 89) !important; /* Altere a cor do texto (pode ser outra cor desejada) */
+  font-weight: normal; /* Remove o negrito */
+  font-size: 16px; /* Ajuste o tamanho da fonte se necessário */
+}
+@media (max-width: 480px) {
+ footer p {
+  font-size: xx-small !important;
+ }
+}

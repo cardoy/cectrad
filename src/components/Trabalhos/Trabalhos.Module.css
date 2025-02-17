@@ -1,0 +1,33 @@
+.corpo{
+   margin-top: 70px;
+}
+.livros-container {
+    
+    max-height: 90vh; /* Garante que o container ocupe no máximo 90% da tela */
+    overflow-y: auto; /* Adiciona rolagem caso necessário */
+    padding-bottom: 20px; /* Adiciona espaço no fim */
+  }
+  
+  .capa-livro {
+    transition: transform 0.3s ease-in-out;
+    width: 40vh; /* Garante que a imagem ocupe toda a largura da coluna */
+    height: auto; /* Mantém a proporção */
+    max-height: 30vh; /* Altura máxima padrão */
+  }
+  
+  .capa-livro:hover {
+    transform: scale(1.1);
+  }
+  h6{
+    color: rgb(92, 89, 89) !important;
+
+  }
+  @media (max-width: 376px) {
+    .capa-livro{      
+      max-width: 30vh;
+      max-height: 20vh;
+    }
+    h6{
+      font-size: small !important;
+    }
+  }

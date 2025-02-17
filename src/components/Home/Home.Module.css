@@ -1,0 +1,139 @@
+.bodyHome {
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+    width: 100%;
+  }
+  
+  .cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+  }
+  h1,h2,h3,p {
+    color: rgb(92, 89, 89) !important;
+  }
+.parfim{
+  
+  color: rgb(92, 89, 89) !important;
+  padding-top: 12px;
+}
+
+  .carousel {
+    position: relative;
+    z-index: 1; /* Mantém abaixo do Navbar */
+  }
+  .carousel-container {
+    width: 99%; /* Ajusta a largura, pode ser menor se quiser */
+    margin: auto; /* Centraliza o carousel */
+  }
+  
+  .carousel img {
+    height: 380px; /* Define a altura menor */
+    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+    border-radius: 15px;
+  }
+  .carousel-caption {
+    background: rgba(220, 214, 214, 0.0); /* Fundo escuro com transparência */
+    backdrop-filter: blur(1px); /* Aplica o blur */
+    padding: 10px;
+    border-radius: 10px;
+  }  
+.carousel-caption h3,p{
+  color: black  !important;
+  font-weight: bold !important;
+}  
+.carousel-caption p{
+  font-weight: normal !important;
+  
+}
+
+@media (max-width:359px) {
+
+  .carousel-caption h3{
+    font-size: 14px !important;
+  }
+  .carousel-caption p{
+    font-size: 12px !important;
+    
+  }
+  .cont h3 {
+  font-size: 14px !important; 
+}
+  parfim {
+    font-size: 14px !important;
+  }
+}
+@media (min-width:360px) and (max-width:540px) {
+
+  .carousel-caption h3{
+    font-size: 16px !important;
+  }
+  .carousel-caption p{
+    font-size: 14px !important;
+    
+  }
+  .cont h3 {
+  font-size: 16px !important; 
+}
+  parfim {
+    font-size: 18px !important;
+  }
+}
+@media(max-height: 667px) {
+  .carousel-container {
+    height: 70vh !important;
+  }
+  
+  .carousel img {
+    height: 62vh !important; /* Define a altura menor */
+  }
+}
+
+@media (min-height: 668px) and (max-height: 800px) {
+  .carousel-container {
+    height: 80vh !important;
+  }
+  
+  .carousel img {
+    height: 64vh !important; /* Define a altura menor */
+  }
+  .cont h3 {
+    font-size: 18px !important;
+  }
+}
+@media (min-height: 801px)  {
+  .carousel-container {
+    height: 80vh !important;
+  }
+  
+  .carousel img {
+    height: 70vh !important; /* Define a altura menor */
+  }
+}
+@media (min-height: 1200px)  {
+  .carousel-container {
+    height: 85vh !important;
+  }
+  
+  .carousel img {
+    height: 77vh !important; /* Define a altura menor */
+  }
+}
+@media (min-width: 1000px) and (max-height: 600px)  {
+  .cont h3{
+    font-size: 20px !important;
+  }
+  .parfim{
+    font-size: 20px !important;
+
+  }
+  .carousel-container {
+    height: 65vh !important;
+  }
+  
+  .carousel img {
+    height: 60vh !important; /* Define a altura menor */
+  }
+}

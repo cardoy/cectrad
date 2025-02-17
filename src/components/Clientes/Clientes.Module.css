@@ -1,0 +1,26 @@
+.bodyClientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Mantém a altura mínima igual à altura da tela */
+    margin-top: 50px;
+    margin-bottom: 60px;
+    width: 100%;
+    overflow-y: auto; /* Adiciona rolagem se necessário */
+    padding: 20px;
+  }
+  
+  .lista {
+    background-color: transparent !important;
+  }
+  
+  .item {
+    border: none !important; /* Remove bordas para parecer uma lista normal */
+    background-color: transparent !important; /* Remove o fundo */
+  }
+  @media (min-height: 800px) {
+    .bodyClientes {
+      margin-top: 80px !important;
+    }
+
+  }
