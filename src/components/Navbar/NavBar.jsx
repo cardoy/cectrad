@@ -31,10 +31,10 @@ export default function NavbarComponent({ handleLanguageChange }) {
             <Nav.Link className="item" as={Link} to="/Areas" onClick={() => setExpanded(false)}>
               {t('linha3')}
             </Nav.Link>
-            <Nav.Link className="item" as={Link} to="/Clientes" onClick={() => setExpanded(false)}>
+            <Nav.Link className="item" as={Link} to="/Trabalhos" onClick={() => setExpanded(false)}>
               {t('linha4')}
             </Nav.Link>
-            <Nav.Link className="item" as={Link} to="/Trabalhos" onClick={() => setExpanded(false)}>
+            <Nav.Link className="item" as={Link} to="/Clientes" onClick={() => setExpanded(false)}>
               {t('linha5')}
             </Nav.Link>
             <Nav.Link className="item" as={Link} to="/Contato" onClick={() => setExpanded(false)}>
