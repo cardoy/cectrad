@@ -2,5 +2,6 @@
   command = "npm install --legacy-peer-deps && npm run build"
   publish = "build"
 
-[context.production.environment]
-  NODE_VERSION = "20"
+
+[build.environment]
+  NODE_VERSION = "20.11.1"
