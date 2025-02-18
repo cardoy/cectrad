@@ -13,6 +13,7 @@ import "./App.Module.css";
 
 export default function App() {
   const[language,setLanguage] = useState('es');
+  console.log(language);
   const handleLanguageChange = (language) => {
     i18n.changeLanguage(language).then(() => {
       setLanguage(language);
