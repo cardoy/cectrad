@@ -1,9 +1,13 @@
 import React from 'react';
 import { Container,Row,Col } from 'react-bootstrap';
 import './Trabalhos.Module.css';
+import { useTranslation } from 'react-i18next';
 
 
 export default function Trabalhos  () {
+
+      const{t} = useTranslation();
+  
   const livros = [
     { id: 1, titulo: "Livro 1", imagem: "/item1.jpg", pdf: "/naval.pdf" },
     { id: 2, titulo: "Livro 2", imagem: "/item2.jpg", pdf: "/chagas.pdf" },
@@ -19,8 +23,8 @@ export default function Trabalhos  () {
   
   return (
     <div className='corpoTrab text-center' >
-      <h6>Seguem exemplos de trabalhos já realizados.</h6>
-      <h6>Clique na capa para ver a tradução na íntegra.</h6>
+      <h6>{t('linha25')}</h6>
+      <h6>{t('linha26')}</h6>
         <Container className="livros-container text-center mt-4">
       <Row className="justify-content-center">
         {livros.map((livro) => (

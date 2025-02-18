@@ -3,8 +3,11 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
 import './Contato.Module.css';
+import { useTranslation } from 'react-i18next';
 
 export default function Contato() {
+    const{t} = useTranslation();
+  
   const [captchaValido, setCaptchaValido] = useState(false);
   const [mensagemStatus, setMensagemStatus] = useState("");
   const formRef = useRef();
@@ -46,7 +49,7 @@ export default function Contato() {
               <Col sm={8} md={8} lg={8}>
               <Form.Group className="d-flex align-items-center mb-3">
                     <Form.Label className="label" style={{ width: "120px" }}>
-                      Nome:
+                    {t('linha27')}
                     </Form.Label>
                     <Form.Control
                       className="texto"
@@ -59,7 +62,7 @@ export default function Contato() {
                 <Col xs={12} sm={8} md={8} lg={8} >
                 <Form.Group className="d-flex align-items-center mb-3">
                     <Form.Label className="label" style={{ width: "120px" }}>
-                      Email:
+                    {t('linha28')}
                     </Form.Label>
                     <Form.Control
                       className="texto"
@@ -72,7 +75,7 @@ export default function Contato() {
                 <Col xs={12} sm={8} md={8} lg={8} >
                 <Form.Group className="d-flex align-items-center mb-3">
                     <Form.Label className="label" style={{ width: "120px" }}>
-                      Celular:
+                    {t('linha29')}
                     </Form.Label>
                     <Form.Control
                       className="texto"
@@ -85,7 +88,7 @@ export default function Contato() {
                 <Col xs={12} sm={8} md={8} lg={8} className="text-center">
                 <Form.Group className="d-flex align-items-center mb-3">
                     <Form.Label className="label" style={{ width: "120px" }}>
-                      Mensagem:
+                    {t('linha30')}
                     </Form.Label>
                     <Form.Control
                       className="texto"
@@ -107,7 +110,7 @@ export default function Contato() {
                     </div>
 
                   <Button type="submit" variant="success" className="botao mt-2">
-                          Enviar
+                  {t('linha31')}
                   </Button>
                </Col>
               </Row>

@@ -1,12 +1,17 @@
 import { Container } from "react-bootstrap";
 import "./Footer.Module.css";
+import { useTranslation } from 'react-i18next';
+
+
+
 
 const Footer = () => {
+  const{t} = useTranslation();
   return (
     <footer className="footer text-light py-3">
       <Container className="footer-container">
         {/* Texto alinhado à esquerda */}
-        <p>© {new Date().getFullYear()} CeCTrad. Todos os direitos reservados.</p>
+        <p>© {new Date().getFullYear()} CeCTrad. {t('linha33')}</p>
 
         {/* Ícones alinhados à direita */}
         <div className="footer-icons">

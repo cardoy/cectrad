@@ -1,11 +1,18 @@
 import React from 'react';
 import './Home.Module.css';
 import { Container, Carousel, Image } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+
+
 export default function Home  () {
+
+  const{t} = useTranslation();
+
   return (
     <div className='bodyHome'>
     <Container className='cont text-center'>
-      <h3>Traduções Literárias, Técnicas e Juramentadas. Telefone/WhatsApp: (21) 99171-7885</h3>
+ 
+      <h3>{t('linha1')}</h3>
     </Container>
     <div className="carousel-container">
     <div className="mt-4" >
@@ -19,8 +26,8 @@ export default function Home  () {
                fluid 
           />
             <Carousel.Caption>
-              <h3>Nosso objetivo</h3>
-              <p>Prestar serviços de tradução e versão de textos e documentos nos idiomas português e espanhol.</p>
+              <h3>{t('linha9')}</h3>
+              <p>{t('linha10')}</p>
             </Carousel.Caption>
           </Carousel.Item>
   
@@ -33,9 +40,9 @@ export default function Home  () {
                fluid 
           />
             <Carousel.Caption>
-              <h3>Tradução Técnica</h3>
-              <p>Modalidade tradutória de textos técnicos e científicos com terminologias especializadas.</p>
-              <p>Contamos com colaboradores com vasto conhecimento em áreas específicas.</p>
+              <h3>{t('linha11')}</h3>
+              <p>{t('linha12')}</p>
+              <p>{t('linha13')}</p>
             </Carousel.Caption>
           </Carousel.Item>
   
@@ -48,13 +55,13 @@ export default function Home  () {
                fluid 
           />
             <Carousel.Caption>
-              <h3>Tradução Juramentada</h3>
-              <p>Tradução portadora de fé pública para todos os efeitos legais.</p>
-              <p>É reconhecida por instituições e órgãos públicos e realizada por tradutor juramentado.</p>
+              <h3>{t('linha14')}</h3>
+              <p>{t('linha15')}</p>
+              <p>{t('linha16')}</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-            <h5 className='parfim text-center'>Conetando o mundo há mais de 30 anos.</h5>  
+            <h5 className='parfim text-center'>{t('linha32')}</h5>  
         </div>
     </div>
 

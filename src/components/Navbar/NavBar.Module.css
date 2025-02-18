@@ -8,6 +8,7 @@
   left: 0;
   z-index: 1030; /* Garante que a navbar fique acima de outros elementos */
 }
+
 .titulo{
    font-family: 'Book Antiqua' !important;
    font-weight: bold !important;
@@ -18,8 +19,20 @@
   color: rgb(92, 89, 89) !important;
 
 }
-@media (max-width: 350px) {
+.portugues{
+  color: green !important;
+}
+
+.espanhol{
+  color: red !important;
+}
+@media (max-width: 380px) {
   .titulo {
     font-size: 18px !important;
+  }
+}
+@media (max-width: 540px) {
+  .titulo span {
+    display: none;
   }
 }
