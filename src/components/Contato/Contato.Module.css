@@ -5,6 +5,7 @@
 .botao {
     background-color:  rgba(200, 200, 200, 0.8)  !important; /* Cor personalizada */
     border-color:  rgba(92, 91, 91, 0.8) !important; /* Cor personalizada para a borda */
+    color: black !important;
   }
   
   .botao:hover {
