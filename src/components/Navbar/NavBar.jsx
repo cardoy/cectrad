@@ -17,7 +17,7 @@ export default function NavbarComponent({ handleLanguageChange }) {
       <Container>
         <Image src="logo1.png" alt="Logo" width={40} height={40} className="me-2" />
         <Navbar.Brand className="titulo" as={Link} to="/">
-          CecTrad <span>Traduções</span>
+          CeCTrad <span>Traduções</span>
         </Navbar.Brand>
         <Navbar.Toggle 
           aria-controls="basic-navbar-nav" 
