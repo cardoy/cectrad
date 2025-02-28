@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="footer text-light py-3">
       <Container className="footer-container">
         {/* Texto alinhado à esquerda */}
-        <p>© {new Date().getFullYear()} CeCTrad. {t('linha33')}</p>
+        <p>© {new Date().getFullYear()} CecTrad. {t('linha33')}</p>
 
         {/* Ícones alinhados à direita */}
         <div className="footer-icons">
